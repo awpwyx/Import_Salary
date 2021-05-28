@@ -182,7 +182,7 @@ namespace Import_Salary
 
 
             K3CloudApiClient client = new K3CloudApiClient("http://172.16.120.253/K3Cloud/");
-            var loginResult = client.ValidateLogin("5e9423fea8924d", loginname.Text.ToString(), password.Text.ToString(), 2052);
+            var loginResult = client.ValidateLogin("5a41c90a4493d6", loginname.Text.ToString(), password.Text.ToString(), 2052);
             var resultType = JObject.Parse(loginResult)["LoginResultType"].Value<int>();
             //登录结果类型等于1，代表登录成功
             if (resultType == 1)
@@ -199,8 +199,12 @@ namespace Import_Salary
                     month = int.Parse(DateTime.Now.Month.ToString())-1;
                     year = int.Parse(DateTime.Now.ToString("yyyy")) ;
                 }
+
                 int monthDay = DateTime.DaysInMonth(year, month);
+
+
                 DateTime date = new DateTime(year, month, monthDay);
+
                 string a = "{\"Creator\":\"\",\"NeedUpDateFields\":[],\"NeedReturnFields\":[],\"IsDeleteEntry\":\"true\",\"SubSystemId\":\"\",\"IsVerifyBaseDataField\":\"false\",\"IsEntryBatchFill\":\"true\",\"ValidateFlag\":\"true\",\"NumberSearch\":\"true\",\"InterationFlags\":\"\",\"IsAutoSubmitAndAudit\":\"false\",\"Model\":{\"FVOUCHERID\":0,\"FAccountBookID\":{\"FNumber\":\"001\"},\"FDate\":\"" + DateTime.Now.ToString("yyyy-MM-dd") + "\",\"FVOUCHERGROUPID\":{\"FNumber\":\"PZZ1\"},\"FVOUCHERGROUPNO\":\"\",\"FATTACHMENTS\":0,\"FISADJUSTVOUCHER\":\"false\",\"FDocumentStatus\":\"Z\",\"FYEAR\":"+year.ToString()+",\"FSourceBillKey\":{\"FNumber\":\"\"},\"FPERIOD\":"+month.ToString() + ",\"FIMPORTVERSION\":\"\",\"FEntity\":[" + entry + "]}}";
                 //var los=
                 var js1=
@@ -483,6 +487,16 @@ namespace Import_Salary
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int year;
+            int month;
+            year = int.Parse(textBox2.Text);
+            month = int.Parse(comboBox1.Text);
+            DataTable dt2 = _BLL_POP_Select.Client_Select_Contract(year, month).Tables[0];
+            DataTable dt3 = _BLL_POP_Select.Client_Select_Contract(year, month).Tables[1];
         }
     }
 }

@@ -38,6 +38,8 @@
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.FDepartment = new System.Windows.Forms.TextBox();
@@ -54,8 +56,6 @@
             this.预算科目编码 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.预算科目 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.预算金额 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,27 +75,27 @@
             this.toolStripButton3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1213, 32);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(910, 27);
             this.toolStrip1.TabIndex = 13;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 32);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
             // toolStripButton1
             // 
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(116, 29);
+            this.toolStripButton1.Size = new System.Drawing.Size(97, 24);
             this.toolStripButton1.Text = "查找项目";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -104,7 +104,7 @@
             this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(116, 29);
+            this.toolStripButton4.Size = new System.Drawing.Size(97, 24);
             this.toolStripButton4.Text = "资金来源";
             this.toolStripButton4.Click += new System.EventHandler(this.资金来源);
             // 
@@ -113,7 +113,7 @@
             this.查找部门.Image = ((System.Drawing.Image)(resources.GetObject("查找部门.Image")));
             this.查找部门.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.查找部门.Name = "查找部门";
-            this.查找部门.Size = new System.Drawing.Size(116, 29);
+            this.查找部门.Size = new System.Drawing.Size(97, 24);
             this.查找部门.Text = "查找部门";
             this.查找部门.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -122,7 +122,7 @@
             this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(76, 29);
+            this.toolStripButton6.Size = new System.Drawing.Size(65, 24);
             this.toolStripButton6.Text = "保存";
             this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
             // 
@@ -131,7 +131,7 @@
             this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(76, 29);
+            this.toolStripButton3.Size = new System.Drawing.Size(65, 24);
             this.toolStripButton3.Text = "退出";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
@@ -151,110 +151,120 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.FBillNo);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 32);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(0, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1213, 122);
+            this.panel1.Size = new System.Drawing.Size(910, 98);
             this.panel1.TabIndex = 14;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(428, 70);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(53, 12);
+            this.label7.TabIndex = 12;
+            this.label7.Text = "项目时间";
+            this.label7.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 72);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 12);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "金额单位：万元";
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(649, 80);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Location = new System.Drawing.Point(487, 64);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(157, 25);
+            this.dateTimePicker1.Size = new System.Drawing.Size(119, 21);
             this.dateTimePicker1.TabIndex = 10;
+            this.dateTimePicker1.Visible = false;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(872, 30);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(654, 24);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(37, 15);
+            this.label5.Size = new System.Drawing.Size(29, 12);
             this.label5.TabIndex = 9;
             this.label5.Text = "部门";
             // 
             // FDepartment
             // 
-            this.FDepartment.Location = new System.Drawing.Point(977, 22);
-            this.FDepartment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FDepartment.Location = new System.Drawing.Point(733, 18);
             this.FDepartment.Name = "FDepartment";
-            this.FDepartment.Size = new System.Drawing.Size(157, 25);
+            this.FDepartment.Size = new System.Drawing.Size(119, 21);
             this.FDepartment.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(563, 26);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(422, 21);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 15);
+            this.label4.Size = new System.Drawing.Size(59, 12);
             this.label4.TabIndex = 7;
             this.label4.Text = " 资金来源";
             // 
             // FSourceFunds
             // 
-            this.FSourceFunds.Location = new System.Drawing.Point(649, 22);
-            this.FSourceFunds.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FSourceFunds.Location = new System.Drawing.Point(487, 18);
             this.FSourceFunds.Name = "FSourceFunds";
-            this.FSourceFunds.Size = new System.Drawing.Size(157, 25);
+            this.FSourceFunds.Size = new System.Drawing.Size(119, 21);
             this.FSourceFunds.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(856, 80);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(642, 64);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 15);
+            this.label3.Size = new System.Drawing.Size(41, 12);
             this.label3.TabIndex = 5;
             this.label3.Text = "总金额";
             // 
             // FSumPrice
             // 
-            this.FSumPrice.Location = new System.Drawing.Point(977, 76);
-            this.FSumPrice.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FSumPrice.Location = new System.Drawing.Point(733, 61);
             this.FSumPrice.Name = "FSumPrice";
             this.FSumPrice.ReadOnly = true;
-            this.FSumPrice.Size = new System.Drawing.Size(157, 25);
+            this.FSumPrice.Size = new System.Drawing.Size(119, 21);
             this.FSumPrice.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(303, 30);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(227, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 15);
+            this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 3;
             this.label2.Text = "工程项目";
             // 
             // FProjectCode
             // 
-            this.FProjectCode.Location = new System.Drawing.Point(383, 26);
-            this.FProjectCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FProjectCode.Location = new System.Drawing.Point(287, 21);
             this.FProjectCode.Name = "FProjectCode";
-            this.FProjectCode.Size = new System.Drawing.Size(157, 25);
+            this.FProjectCode.Size = new System.Drawing.Size(119, 21);
             this.FProjectCode.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(29, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 15);
+            this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 1;
             this.label1.Text = "单据编号";
             // 
             // FBillNo
             // 
-            this.FBillNo.Location = new System.Drawing.Point(119, 26);
-            this.FBillNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FBillNo.Location = new System.Drawing.Point(89, 21);
             this.FBillNo.Name = "FBillNo";
             this.FBillNo.ReadOnly = true;
-            this.FBillNo.Size = new System.Drawing.Size(157, 25);
+            this.FBillNo.Size = new System.Drawing.Size(119, 21);
             this.FBillNo.TabIndex = 0;
             // 
             // dataGridView1
@@ -266,11 +276,10 @@
             this.预算科目,
             this.预算金额});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 154);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 125);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(1213, 497);
+            this.dataGridView1.Size = new System.Drawing.Size(910, 396);
             this.dataGridView1.TabIndex = 15;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
@@ -296,33 +305,14 @@
             this.预算金额.HeaderText = "预算金额";
             this.预算金额.Name = "预算金额";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 90);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 15);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "金额单位：万元";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(571, 87);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 15);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "项目时间";
-            // 
             // F_Budget_Add
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1213, 651);
+            this.ClientSize = new System.Drawing.Size(910, 521);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.toolStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "F_Budget_Add";
             this.Text = "预算工程款";
             this.Load += new System.EventHandler(this.F_Budget_Add_Load);

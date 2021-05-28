@@ -93,9 +93,10 @@ namespace Import_Salary
             mBudget.FBillNo = FBillNo.Text;
             mBudget.FInsertTime = dateTimePicker1.Value;
             mBudget.FSumPrice =decimal.Parse(FSumPrice.Text);
-          
 
-            DataTable ds = _BLL_POP_Insert.Client_Insert_Budget(mBudget).Tables[0];
+
+
+           DataTable ds = _BLL_POP_Insert.Client_Insert_Budget(mBudget).Tables[0];
             for (int i = 0; i < dataGridView1.RowCount - 1; i++)
             {
                 if (dataGridView1.Rows[i].Cells[1].Value != null)

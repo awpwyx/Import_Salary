@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Import_Salary
 {
-     public class SJX_Kingdee_Select
+    public class SJX_Kingdee_Select
     {
         private readonly string connstr = CsDbHelperSql.ConnStr("KingdeeCloud");
 
-        public DataSet Client_Select_by_Kingdee(string label1,string label2,int type) // 0---工程项目 1---预算科目
+        public DataSet Client_Select_by_Kingdee(string label1, string label2, int type) // 0---工程项目 1---预算科目
         {
 
             SqlParameter[] parameter = {
@@ -25,12 +25,12 @@ namespace Import_Salary
 
             return CsDbHelperSql.RunProcedureDataSet("sp_HS_JX_Client_Select_by_Kingdee", parameter, connstr);
         }
-        public DataSet Client_Select_Max( int type) // 0---工程项目 1---预算科目
+        public DataSet Client_Select_Max(int type) // 0---工程项目 1---预算科目
         {
 
             SqlParameter[] parameter = {
 
-               
+
                         new SqlParameter("@type", type),
                                        };
 
